@@ -13,18 +13,19 @@
  ~ See the License for the specific language governing permissions and
  ~ limitations under the License.
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-import withAsyncImport from '../utils/withAsyncImport';
+import withAsyncImport from "../utils/withAsyncImport";
 
-import './Page/Page';
-import './Container/Container';
-import './ExperienceFragment/ExperienceFragment';
-import './XxXxx';
+import "./Page/Page";
+import "./Container/Container";
+import "./ExperienceFragment/ExperienceFragment";
+import "./XxXxx";
+import MeuComponente from "./MeuComponente";
 
-import { MapTo } from '@adobe/aem-react-editable-components';
+import { MapTo } from "@adobe/aem-react-editable-components";
 
-import { CarouselV1IsEmptyFn } from '@adobe/aem-core-components-react-spa/dist/isEmptyFunctions';
+import { CarouselV1IsEmptyFn } from "@adobe/aem-core-components-react-spa/dist/isEmptyFunctions";
 
-import { TitleV2IsEmptyFn } from '@adobe/aem-core-components-react-base/dist/isEmptyFunctions';
+import { TitleV2IsEmptyFn } from "@adobe/aem-core-components-react-base/dist/isEmptyFunctions";
 
 import {
   ContainerV1,
@@ -33,7 +34,7 @@ import {
   TabsV1IsEmptyFn,
   AccordionV1,
   AccordionV1IsEmptyFn,
-} from '@adobe/aem-core-components-react-spa';
+} from "@adobe/aem-core-components-react-spa";
 
 import {
   BreadCrumbV2,
@@ -52,7 +53,7 @@ import {
   SeparatorV1IsEmptyFn,
   ListV2,
   ListV2IsEmptyFn,
-} from '@adobe/aem-core-components-react-base';
+} from "@adobe/aem-core-components-react-base";
 
 //lazyload / code splitting example of an internal component
 const LazyTextComponent = withAsyncImport(() => import(`./Text/Text`));
@@ -69,33 +70,33 @@ const CarouselV1 = withAsyncImport(() =>
   ),
 );
 
-MapTo('reactapp/components/download')(DownloadV1, {
+MapTo("reactapp/components/download")(DownloadV1, {
   isEmpty: DownloadV1IsEmptyFn,
 });
-MapTo('reactapp/components/list')(ListV2, { isEmpty: ListV2IsEmptyFn });
-MapTo('reactapp/components/separator')(SeparatorV1, {
+MapTo("reactapp/components/list")(ListV2, { isEmpty: ListV2IsEmptyFn });
+MapTo("reactapp/components/separator")(SeparatorV1, {
   isEmpty: SeparatorV1IsEmptyFn,
 });
 
-MapTo('reactapp/components/button')(ButtonV1, { isEmpty: ButtonV1IsEmptyFn });
-MapTo('reactapp/components/teaser')(TeaserV1, { isEmpty: TeaserV1IsEmptyFn });
-MapTo('reactapp/components/image')(ImageV2, { isEmpty: ImageV2IsEmptyFn });
-MapTo('reactapp/components/title')(TitleV2, { isEmpty: TitleV2IsEmptyFn });
+MapTo("reactapp/components/button")(ButtonV1, { isEmpty: ButtonV1IsEmptyFn });
+MapTo("reactapp/components/teaser")(TeaserV1, { isEmpty: TeaserV1IsEmptyFn });
+MapTo("reactapp/components/image")(ImageV2, { isEmpty: ImageV2IsEmptyFn });
+MapTo("reactapp/components/title")(TitleV2, { isEmpty: TitleV2IsEmptyFn });
 
-MapTo('reactapp/components/breadcrumb')(BreadCrumbV2, {
+MapTo("reactapp/components/breadcrumb")(BreadCrumbV2, {
   isEmpty: BreadCrumbV2IsEmptyFn,
 });
-MapTo('reactapp/components/navigation')(NavigationV1);
-MapTo('reactapp/components/languagenavigation')(LanguageNavigationV1);
+MapTo("reactapp/components/navigation")(NavigationV1);
+MapTo("reactapp/components/languagenavigation")(LanguageNavigationV1);
 
-MapTo('reactapp/components/tabs')(TabsV1, { isEmpty: TabsV1IsEmptyFn });
-MapTo('reactapp/components/accordion')(AccordionV1, {
+MapTo("reactapp/components/tabs")(TabsV1, { isEmpty: TabsV1IsEmptyFn });
+MapTo("reactapp/components/accordion")(AccordionV1, {
   isEmpty: AccordionV1IsEmptyFn,
 });
-MapTo('reactapp/components/carousel')(CarouselV1, {
+MapTo("reactapp/components/carousel")(CarouselV1, {
   isEmpty: CarouselV1IsEmptyFn,
 });
-MapTo('reactapp/components/container')(ContainerV1, {
+MapTo("reactapp/components/container")(ContainerV1, {
   isEmpty: ContainerV1IsEmptyFn,
 });
 
@@ -107,11 +108,23 @@ MapTo('reactapp/components/container')(ContainerV1, {
  * @type EditConfig
  */
 const TextEditConfig = {
-  emptyLabel: 'Text',
+  emptyLabel: "Text",
 
   isEmpty: function (props) {
     return !props || !props.text || props.text.trim().length < 1;
   },
 };
 
-MapTo('reactapp/components/text')(LazyTextComponent, TextEditConfig);
+MapTo("reactapp/components/text")(LazyTextComponent, TextEditConfig);
+
+const authorAcessibility = { isEmpty: (props) => !props.any };
+
+MapTo("reactapp/components/meu-componente")(MeuComponente, {
+  emptyLabel: "Meu Componente",
+  authorAcessibility,
+});
+
+MapTo("reactapp/components/meu-componente")(Carousel, {
+  emptyLabel: "Carousel",
+  authorAcessibility,
+});

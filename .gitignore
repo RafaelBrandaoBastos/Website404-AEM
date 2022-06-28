@@ -101,3 +101,4 @@ reports/
 # Others
 dispatcher/src/conf.d/variables/default.vars
 .vscode
+/ui.apps/src/main/content/jcr_root/apps/reactapp/clientlibs/clientlib-react

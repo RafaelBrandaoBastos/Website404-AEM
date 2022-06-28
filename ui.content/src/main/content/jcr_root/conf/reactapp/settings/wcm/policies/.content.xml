@@ -363,12 +363,12 @@
                 <responsivegrid jcr:primaryType="nt:unstructured">
                     <spa-default
                         jcr:description="Includes only SPA-Enabled components."
-                        jcr:lastModified="{Date}2022-03-14T12:43:28.973-03:00"
+                        jcr:lastModified="{Date}2022-06-28T14:04:30.946-03:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="SPA Content"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[/libs/wcm/foundation/components/responsivegrid,/apps/reactapp/components/text,/apps/reactapp/components/xx-xxx]">
+                        components="[/libs/wcm/foundation/components/responsivegrid,group:React App - Content]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </spa-default>
                 </responsivegrid>
