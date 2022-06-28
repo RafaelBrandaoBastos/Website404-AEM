@@ -123,8 +123,3 @@ MapTo("reactapp/components/meu-componente")(MeuComponente, {
   emptyLabel: "Meu Componente",
   authorAcessibility,
 });
-
-MapTo("reactapp/components/meu-componente")(Carousel, {
-  emptyLabel: "Carousel",
-  authorAcessibility,
-});
