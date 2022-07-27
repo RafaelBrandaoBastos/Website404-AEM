@@ -1,12 +1,12 @@
 import React from 'react';
 import { MapTo } from '@adobe/aem-react-editable-components';
-import { Text } from './indexStyled.js';
+import { Text, Container } from './indexStyled.js';
 
 const TextComponent = (props) => {
     return(
-        <div>
+        <Container>
             <Text>{props.text}</Text>
-        </div>
+        </Container>
     );
 }
 export default MapTo('reactapp/components/text-componente')(TextComponent);
