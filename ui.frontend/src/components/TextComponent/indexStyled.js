@@ -6,3 +6,6 @@ export const Text = styled.p`
     font-weight: normal;
     color: #4F4F4F;
 `;
+export const Container = styled.div`
+    width: 400px;
+`;
