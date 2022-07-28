@@ -8,8 +8,8 @@
     "model-interface-pkg": "com.reactapp.core.models",
     "model-impl-pkg": "com.reactapp.core.models.impl"
   },
-  "name": "error-componente",
-  "title": "Error Componente",
+  "name": "footer-componente",
+  "title": "Footer Componente",
   "group": "React App - Content",
   "type": "components",
   "options": {
