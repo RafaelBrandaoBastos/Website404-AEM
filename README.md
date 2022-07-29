@@ -1,4 +1,4 @@
-# Website Adobe Experience Manager and ReactJS
+# Website / Adobe Experience Manager + ReactJS
 
 I, as an user, want a custom page for error 404 - Page not found.
 
