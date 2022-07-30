@@ -4,9 +4,7 @@ import { Error} from './indexStyled.js';
 
 const ErrorComponent = (props) => {
     return(
-        <div>
             <Error>{props.text}</Error>
-        </div>
     );
 }
 export default MapTo('reactapp/components/error-componente')(ErrorComponent);

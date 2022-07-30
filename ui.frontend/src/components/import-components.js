@@ -24,6 +24,7 @@ import "./TitleComponent";
 import "./ErrorComponent";
 import "./ButtonComponent";
 import "./FooterComponent";
+import "./ImageComponent";
 import MeuComponente from "./MeuComponente";
 
 import { MapTo } from "@adobe/aem-react-editable-components";

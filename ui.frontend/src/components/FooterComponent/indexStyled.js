@@ -7,9 +7,16 @@ export const Footer = styled.p`
     color: #BDBDBD;
     align-items: center;
     justify-content: center;
-    margin-top: 30%;
 `;
 export const Container = styled.div`
+    display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 250px;
+    @media (max-width: 1200px) {
+    margin-top: 2vh;  
+    }
+    @media (max-width: 600px) {
+    margin-top: 10vh;  
+    }
 `;

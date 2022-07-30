@@ -7,6 +7,7 @@ const TextComponent = (props) => {
         <Container>
             <Text>{props.text}</Text>
         </Container>
+            
     );
 }
 export default MapTo('reactapp/components/text-componente')(TextComponent);

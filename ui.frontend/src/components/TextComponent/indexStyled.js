@@ -5,11 +5,14 @@ export const Text = styled.p`
     font-size: 24px;
     font-weight: normal;
     color: #4F4F4F;
-    @media (max-width: 1210px) {
-    font-size: 16px;
+    @media (max-width: 1200px) {
+    font-size: 18px;
   }
 `;
 export const Container = styled.div`
-    width: 400px;
-    margin-bottom: 10%;
+  margin: 40px 0px 40px 0px;
+  max-width: 400px;
+  @media (max-width: 1210px) {
+    max-width: 600px;
+  }
 `;
