@@ -54,7 +54,7 @@
                                    jcr:primaryType="nt:unstructured"
                                    name="./titleSize"
                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
-                        <text fieldLabel="Digite um texto para o componente em"
+                        <text fieldLabel="Digite um texto para o componente"
                               jcr:primaryType="nt:unstructured"
                               name="./text"
                               sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>

@@ -26,7 +26,7 @@ Multifield.defaultProps = {
             fontSize: "64px",
             color1: "#4F4F4F",
             fontSize1: "24px",
-            color2: "#FFFFFF",
+            color2: "#4F4F4F",
             fontSize2: "14px",
         },
     ],
