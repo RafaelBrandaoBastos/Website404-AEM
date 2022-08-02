@@ -45,19 +45,7 @@ public interface TextModel
     @JsonProperty("text")
     String getText();
 
-    @JsonProperty("textColor")
-    String getTextColor();
-
-    @JsonProperty("textSize")
-    String getTextSize();
-
     @JsonProperty("label")
     String getLabel();
-
-    @JsonProperty("labelColor")
-    String getLabelColor();
-
-    @JsonProperty("labelSize")
-    String getLabelSize();
 
 }

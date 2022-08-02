@@ -5,11 +5,11 @@ import { Button, Title, Text, Container} from './indexStyled.js';
 const Multifield = ({textcontent}) => {
     return(
         <>
-            {textcontent.map(({title, text, label, color = {} }, index) => (
+            {textcontent.map(({title, titleColor, titleSize, text, textColor, textSize, label, labelColor, labelSize = {} }, index) => (
                 <div key={index}>
-                    <Title style={{color: color}}>{title}</Title>
-                    <Container><Text>{text}</Text></Container>
-                    <Button>{label}</Button>
+                    <Title color = {titleColor} fontSize = {titleSize}>{title}</Title>
+                    <Container><Text color1 = {textColor} fontSize1 = {textSize}>{text}</Text></Container>
+                    <Button color2 = {labelColor} fontSize2 = {labelSize}>{label}</Button>
                 </div>               
             ))} 
         </>
@@ -22,6 +22,12 @@ Multifield.defaultProps = {
             title: "I have bad news for you",
             text: "The page you are looking for might be removed or is temporarily unavailable",
             label: "BACK TO HOMEPAGE",
+            color: "#333333",
+            fontSize: "64px",
+            color1: "#4F4F4F",
+            fontSize1: "24px",
+            color2: "#FFFFFF",
+            fontSize2: "14px",
         },
     ],
 };

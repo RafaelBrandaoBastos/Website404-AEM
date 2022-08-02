@@ -46,14 +46,38 @@
                                jcr:primaryType="nt:unstructured"
                                name="./title"
                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
-                        <text fieldLabel="Digite um texto para o componente"
+                        <titleColor fieldLabel="Cor do texto"
+                                    jcr:primaryType="nt:unstructured"
+                                    name="./titleColor"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                        <titleSize fieldLabel="Digite um tamanho para o componente em px"
+                                   jcr:primaryType="nt:unstructured"
+                                   name="./titleSize"
+                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                        <text fieldLabel="Digite um texto para o componente em"
                               jcr:primaryType="nt:unstructured"
                               name="./text"
                               sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                        <textColor fieldLabel="Cor do texto"
+                                   jcr:primaryType="nt:unstructured"
+                                   name="./textColor"
+                                   sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                        <textSize fieldLabel="Digite um tamanho para o componente em px"
+                                  jcr:primaryType="nt:unstructured"
+                                  name="./textSize"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         <label fieldLabel="Digite uma label para o componente"
                                jcr:primaryType="nt:unstructured"
                                name="./label"
                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                        <labelColor fieldLabel="Cor do botão"
+                                    jcr:primaryType="nt:unstructured"
+                                    name="./labelColor"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                        <labelSize fieldLabel="Digite um tamanho para o componente em px"
+                                   jcr:primaryType="nt:unstructured"
+                                   name="./labelSize"
+                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                      </items>
                   </field>
                </textcontent>

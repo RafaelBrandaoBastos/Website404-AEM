@@ -4,27 +4,27 @@ import styled from "styled-components";
 export const Button = styled.button`
     width: 216px;
     height: 68px;
-    font-size: 14px;
     font-family: 'Space Mono';
     font-weight: bold;
     color: #FFFFFF;
-    background-color: #333333;
     border-style: none;
+    background-color: ${(props) => props.color2};
+    font-size: ${(props) => props.fontSize2};
 `;
 export const Text = styled.p`
     font-family: 'Space Mono';
-    font-size: 24px;
     font-weight: normal;
-    color: #4F4F4F;
+    color: ${(props) => props.color1};
+    font-size: ${(props) => props.fontSize1};
     @media (max-width: 1200px) {
     font-size: 18px;
   }
 `;
 export const Title = styled.h1`
     font-family: 'Space Mono';
-    font-size: 64px;
+    font-size: ${(props) => props.fontSize};
     font-weight: bold;
-    color: #4F4F4F;
+    color: ${(props) => props.color};
     margin: 0px;
     padding: 0px;
     max-width: 700px;

@@ -46,19 +46,9 @@ public class TextModelImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleColor;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String titleSize;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String text;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String textColor;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String textSize;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String label;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String labelColor;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String labelSize;
     @SlingObject
     private Resource resource;
 
@@ -75,45 +65,15 @@ public class TextModelImpl
     }
 
     @Override
-    @JsonProperty("titleSize")
-    public String getTitleSize() {
-        return titleSize;
-    }
-
-    @Override
     @JsonProperty("text")
     public String getText() {
         return text;
     }
 
     @Override
-    @JsonProperty("textColor")
-    public String getTextColor() {
-        return textColor;
-    }
-
-    @Override
-    @JsonProperty("textSize")
-    public String getTextSize() {
-        return textSize;
-    }
-
-    @Override
     @JsonProperty("label")
     public String getLabel() {
         return label;
-    }
-
-    @Override
-    @JsonProperty("labelColor")
-    public String getLabelColor() {
-        return labelColor;
-    }
-
-    @Override
-    @JsonProperty("labelSize")
-    public String getLabelSize() {
-        return labelSize;
     }
 
     @Override
