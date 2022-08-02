@@ -12,6 +12,7 @@ The main parts of the template are:
 * 3 Git: The code must be versioned using Git and kept in a freely chosen repository (Github is recommended). The creation of branches and commits will be free according to the need of the developer.
 
 <img src="ui.content/src/main/content/jcr_root/content/dam/reactapp/asset.jpg/_jcr_content/renditions/demo.png">
+<img src="ui.content/src/main/content/jcr_root/content/dam/reactapp/asset.jpg/_jcr_content/renditions/aempage.png">
 
 
 
