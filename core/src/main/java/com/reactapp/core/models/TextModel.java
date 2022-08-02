@@ -24,16 +24,22 @@ import org.osgi.annotation.versioning.ConsumerType;
 
 
 /**
- * Defines the {@code ErrorComponente} Sling Model used for the {@code reactapp/components/error-componente} component.
+ * Defines the {@code TextModel} Sling Model used for the multifield in {@code reactapp/components/multifield-component} component.
  * 
  */
 @ConsumerType
-public interface ErrorComponente
+public interface TextModel
     extends ComponentExporter
 {
 
 
+    @JsonProperty("title")
+    String getTitle();
+
     @JsonProperty("text")
     String getText();
+
+    @JsonProperty("label")
+    String getLabel();
 
 }

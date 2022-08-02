@@ -6,8 +6,12 @@ export const Img = styled.img`
     @media (max-width: 600px) {
     width: 400px;  
     }
-    @media (max-width: 400px) {
+    @media (max-width: 480px) {
     width: 300px;  
+    }
+    @media (max-width: 370px) {
+    width: 100%;
+    height: auto; 
     }
 `;
 

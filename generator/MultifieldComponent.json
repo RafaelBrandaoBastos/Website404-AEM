@@ -1,0 +1,74 @@
+{
+    "project-settings": {
+      "code-owner": "React App",
+      "bundle-path": "../core/src/main/java",
+      "test-path": "../core/src/test/java",
+      "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+      "component-path": "reactapp",
+      "model-interface-pkg": "com.reactapp.core.models",
+      "model-impl-pkg": "com.reactapp.core.models.impl"
+    },
+    "name": "multifield-component",
+    "title": "Multifield Component",
+    "group": "React App - Content",
+    "type": "components",
+    "options": {
+      "js": false,
+      "jstxt": false,
+      "css": false,
+      "csstxt": false,
+      "html": false,
+      "html-content": false,
+      "slingmodel": true,
+      "testclass": false,
+      "junit-major-version": 5,
+      "content-exporter": true,
+      "model-adaptables": [
+        "request"
+      ],
+      "generic-javadoc": false,
+      "properties": [
+        {
+        "field": "textcontent",
+        "type": "multifield",
+        "label": "TextMultifield",
+        "model-name": "TextModel",
+        "use-existing-model": false,
+        "json-expose": true,
+        "items": [ 
+            { 
+              "field": "title",
+              "type": "textfield",
+              "label": "Digite um título para o componente",
+              "json-expose": true,
+              "json-property": "title"
+            },
+            {
+              "field": "color",
+              "label": "Cor do texto",
+              "type": "textfield",
+              "json-expose": true,
+              "json-property": "color"
+            },
+            { 
+              "field": "text",
+              "type": "textfield",
+              "label": "Digite um texto para o componente",
+              "json-expose": true,
+              "json-property": "text"
+            },
+            { 
+              "field": "label",
+              "type": "textfield",
+              "label": "Digite uma label para o componente",
+              "json-expose": true,
+              "json-property": "label"
+            }
+        ]
+        }
+      ]
+    }
+  }
+
+
+ 
