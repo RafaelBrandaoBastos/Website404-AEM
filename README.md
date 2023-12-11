@@ -1,7 +1,7 @@
 
 # Website / Adobe Experience Manager + ReactJS
 
-I, as an user, want a custom page for error 404 - Page not found.
+Editable page for error 404 made with ReactJS in AEM.
 
 ## Instructions
 
